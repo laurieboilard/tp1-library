@@ -1,0 +1,21 @@
+import { Meta, Props, Canvas, Story } from '@storybook/addon-docs';
+import Progressbar from './Progressbar';
+
+<Meta title="Example/Progressbar" component={Progressbar} />
+
+# Example Component Demo
+
+## Progressbar props
+<Props of={Progressbar} />
+
+## Description
+
+`Progressbar` display the current progress of an operation flow.
+
+## Demo
+
+<Canvas>
+  <Story name="Example Progressbar">
+    {(args) => <Progressbar {...args} />}
+  </Story>
+</Canvas>
