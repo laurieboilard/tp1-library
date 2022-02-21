@@ -21,7 +21,8 @@
     "fix:style": "npx stylelint ./src/ --fix",
     "start:docs": "start-storybook -p 6006 -s public",
     "build:docs": "build-storybook -s public",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "chromatic": "npx chromatic --project-token=3fb6917073f1"
   },
   "eslintConfig": {
     "extends": "react-app"
