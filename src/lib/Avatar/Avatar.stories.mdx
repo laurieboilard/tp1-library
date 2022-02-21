@@ -15,7 +15,19 @@ import Avatar from './Avatar';
 ## Demo
 
 <Canvas>
-  <Story name="Example Avatar">
-    {(args) => <Avatar {...args} />}
+  <Story name="Small">
+      <Avatar size="small" icon={<UserOutlined />} />
+  </Story>
+  <Story name="Large">
+      <Avatar size="large" icon={<UserOutlined />} />
+  </Story>
+  <Story name="Square">
+      <Avatar shape="square" icon={<UserOutlined />} />
+  </Story>
+    <Story name="Circle">
+      <Avatar shape="circle" icon={<UserOutlined />} />
+  </Story>
+  <Story name="Square">
+      <Avatar shape="square" icon={<UserOutlined />} />
   </Story>
 </Canvas>

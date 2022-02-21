@@ -4,23 +4,23 @@ import 'antd/dist/antd.css';
 import './Switch.module.css';
 import {Switch} from 'antd';
 
-export function Switchs({size}) {
+export function getSwitch({size}) {
   return (
     <>
-    <Switch size={size} defaultChecked />
+      <Switch size={size} defaultChecked />
     </>
-    );
-  };
+  );
+};
 
-Switchs.propTypes = {
+getSwitch.propTypes = {
   /**
    * Define the size 
    */
    size: PropTypes.oneOf(['small', 'large']),
 };
 
-Switchs.defaultProps = {
+getSwitch.defaultProps = {
   size: 'small',
 };
 
-export default Switchs
+export default getSwitch;

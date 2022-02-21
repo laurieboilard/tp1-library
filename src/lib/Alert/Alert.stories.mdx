@@ -1,0 +1,53 @@
+import { Meta, Props, Canvas, Story } from '@storybook/addon-docs';
+import Alert from './Alert';
+import './Alert.module.css';
+
+<Meta title="Example/Alert" component={Alert} />
+
+# Example Component Demo
+
+## Alert props
+<Props of={Alert} />
+
+## Description
+
+`Alert` component for feedback.
+
+
+
+## Demo
+
+<Canvas>
+  <Story name="Success">
+      <Alert 
+        message="Success Tips"
+        description="Detailed description and advice about successful copywriting."
+        type="success"
+        showIcon />
+  </Story>
+  <Story name="Info">
+    <Alert
+      message="Informational Notes"
+      description="Additional description and information about copywriting."
+      type="info"
+      showIcon
+    />
+  </Story>
+  <Story name="Warning">
+    <Alert
+      message="Warning"
+      description="This is a warning notice about copywriting."
+      type="warning"
+      showIcon
+      closable
+    />
+  </Story>
+    <Story name="Error">
+    <Alert
+      message="Error"
+      description="This is an error message about copywriting."
+      type="error"
+      showIcon
+    />
+  </Story>
+</Canvas>

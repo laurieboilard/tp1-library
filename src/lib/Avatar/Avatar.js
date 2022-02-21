@@ -4,7 +4,7 @@ import 'antd/dist/antd.css';
 import {Avatar} from 'antd';
 import {UserOutlined} from '@ant-design/icons';
 
-export function Avatars({size, shape}) {
+export function getAvatar({size, shape}) {
   return (
     <>
       <>
@@ -14,17 +14,20 @@ export function Avatars({size, shape}) {
     );
   };
 
-Avatars.propTypes = {
+getAvatar.propTypes = {
   /**
-   * Define the size and the shape
-   */
+   * Define the size 
+  */
   size: PropTypes.oneOf(['small', 'large']),
+  /**
+   * Define the shape 
+   */
   shape: PropTypes.oneOf(['square', 'circle']),
 };
 
-Avatars.defaultProps = {
+getAvatar.defaultProps = {
   size: 'small',
   shape: 'circle',
 };
 
-export default Avatars
+export default getAvatar;

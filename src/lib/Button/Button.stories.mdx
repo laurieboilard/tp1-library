@@ -15,7 +15,19 @@ import Button from './Button';
 ## Demo
 
 <Canvas>
-  <Story name="Example Button">
-    {(args) => <Button {...args} />}
+    <Story name="Small">
+      <Button size="small" className="bouton-default">
+          Bouton
+      </Button>
+    </Story>
+    <Story name="Medium">
+      <Button size="medium" className="bouton-default">
+          Bouton
+      </Button>
+    </Story>
+    <Story name="Large">
+      <Button size="large" className="bouton-default">
+          Bouton
+      </Button>
   </Story>
 </Canvas>

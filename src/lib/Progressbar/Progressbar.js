@@ -13,9 +13,12 @@ export function Progressbar({status, type}) {
 
 Progressbar.propTypes = {
   /**
-   * Define the type and the status
+   * Define the the status
    */
   status: PropTypes.oneOf(['success', 'exception', 'normal', 'active']),
+  /**
+   * Define the type
+   */
   type: PropTypes.oneOf(['line', 'circle', 'dashboard']),
 };
 
@@ -24,4 +27,4 @@ Progressbar.defaultProps = {
   type: 'line',
 };
 
-export default Progressbar
+export default Progressbar;

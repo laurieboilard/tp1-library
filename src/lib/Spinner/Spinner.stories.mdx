@@ -1,5 +1,6 @@
 import { Meta, Props, Canvas, Story } from '@storybook/addon-docs';
 import Spinner from './Spinner';
+import './Spinner.module.css';
 
 <Meta title="Example/Spinner" component={Spinner} />
 
@@ -17,7 +18,19 @@ import Spinner from './Spinner';
 ## Demo
 
 <Canvas>
-  <Story name="Example Spinner">
-    {(args) => <Spinner {...args} />}
+  <Story name="Small">
+    <Space size="middle">
+      <Spinner size="small"/>
+    </Space>
+  </Story>
+  <Story name="Medium">
+    <Space size="middle">
+      <Spinner size="medium"/>
+    </Space>,
+  </Story>
+  <Story name="Large">
+    <Space size="middle">
+      <Spinner size="large"/>
+    </Space>,
   </Story>
 </Canvas>

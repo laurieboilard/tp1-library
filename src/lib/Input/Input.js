@@ -3,27 +3,21 @@ import PropTypes from 'prop-types';
 import {Input} from 'antd';
 import {UserOutlined} from '@ant-design/icons';
 
-const Inputs = ({size}) => (
+const getInput = ({size}) => (
   <>
-  <Input size={size} placeholder="large size" prefix={<UserOutlined />} />
-  <br />
-  <br />
-  <Input placeholder="default size" prefix={<UserOutlined />} />
-  <br />
-  <br />
-  <Input size="small" placeholder="small size" prefix={<UserOutlined />} />
+  <Input size={size} placeholder="size" prefix={<UserOutlined />} />
   </>
 );
 
-Inputs.propTypes = {
+getInput.propTypes = {
   /**
    * Define the size 
    */
   size: PropTypes.oneOf(['small', 'medium', 'large']),
 };
 
-Inputs.defaultProps = {
+getInput.defaultProps = {
   size: 'large',
 };
 
-export default Inputs
+export default getInput;

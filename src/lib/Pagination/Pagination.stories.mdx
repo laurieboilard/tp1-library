@@ -15,7 +15,10 @@ import Pagination from './Pagination';
 ## Demo
 
 <Canvas>
-  <Story name="Example Pagination">
-    {(args) => <Pagination {...args} />}
+  <Story name="Default">
+    <Pagination total={100} size="default" />
+  </Story>
+  <Story name="Small">
+    <Pagination total={100} size="small" />
   </Story>
 </Canvas>

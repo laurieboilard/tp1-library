@@ -1,0 +1,48 @@
+import { Meta, Props, Canvas, Story } from '@storybook/addon-docs';
+import Badge from './Badge';
+
+<Meta title="Example/Badge" component={Badge} />
+
+# Example Component Demo
+
+## Badge props
+<Props of={Badge} />
+
+## Description
+
+`Badge` is small numerical value or status descriptor for UI elements.
+
+## Demo
+
+<Canvas>
+  <Story name="Small">
+    <Badge size="small" count={5}>
+      <Avatar shape="square" size="large" />
+    </Badge>
+  </Story>
+  <Story name="Default">
+    <Badge size="default" count={5}>
+      <Avatar shape="square" size="large" />
+    </Badge>
+  </Story>
+    <Story name="Processing">
+    <Badge status="processing" count={5}>
+      <Avatar shape="square" size="large" />
+    </Badge>
+  </Story>
+      <Story name="Success">
+    <Badge status="success" count={5}>
+      <Avatar shape="square" size="large" />
+    </Badge>
+  </Story>
+  <Story name="Warning">
+    <Badge status="warning" count={5}>
+      <Avatar shape="square" size="large" />
+    </Badge>
+  </Story>
+  <Story name="Error">
+    <Badge status="error" count={5}>
+      <Avatar shape="square" size="large" />
+    </Badge>
+  </Story>
+</Canvas>

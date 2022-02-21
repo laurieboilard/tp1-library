@@ -15,7 +15,16 @@ import Select from './Select';
 ## Demo
 
 <Canvas>
-  <Story name="Example Select">
-    {(args) => <Select {...args} />}
+  <Story name="False">
+    <Select defaultValue="lucy" style={{width: 120}} bordered={false}>
+      <Option value="lucy">Lucy</Option>
+    </Select>
+  </Story>
+  <Story name="True">
+    <Select defaultValue="lucy" style={{width: 120}} bordered="true">
+      <Option value="jack">Jack</Option>
+      <Option value="lucy">Lucy</Option>
+      <Option value="Yiminghe">yiminghe</Option>
+    </Select>
   </Story>
 </Canvas>

@@ -3,19 +3,17 @@ import PropTypes from 'prop-types';
 import {Pagination} from 'antd';
 import 'antd/dist/antd.css';
 
-const PaginaTion = ({total}) => (
-  <Pagination defaultCurrent={1} total={total} />
-);
+const getPagination = ({size}) => <Pagination total={100} size={size} />;
 
-PaginaTion.propTypes = {
+getPagination.propTypes = {
   /**
-   * Define the number of pages you want
+   * Define the size
    */
-  total: PropTypes.number,
+  size: PropTypes.oneOf(['small', 'default']),
 };
 
-PaginaTion.defaultProps = {
-  total: 50,
+getPagination.defaultProps = {
+  size: 'default',
 };
 
-export default PaginaTion
+export default getPagination;

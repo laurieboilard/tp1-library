@@ -10,12 +10,30 @@ import Progressbar from './Progressbar';
 
 ## Description
 
-`Progressbar` display the current progress of an operation flow.
+`Progress` display the current progress of an operation flow.
 
 ## Demo
 
 <Canvas>
-  <Story name="Example Progressbar">
-    {(args) => <Progressbar {...args} />}
+  <Story name="Line">
+    <Progressbar type="line"/>
+  </Story>
+  <Story name="Circle">
+    <Progressbar type="circle"/>
+  </Story>
+  <Story name="Dashboard">
+    <Progressbar type="dashboard"/>
+  </Story>
+  <Story name="Success">
+    <Progressbar status="success"/>
+  </Story>
+    <Story name="Exception">
+    <Progressbar status="exception"/>
+  </Story>
+  <Story name="Normal">
+    <Progressbar status="normal"/>
+  </Story>
+    <Story name="Active">
+    <Progressbar status="active"/>
   </Story>
 </Canvas>
