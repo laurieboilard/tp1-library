@@ -1,0 +1,28 @@
+name: 'FTP Deployment'
+
+on:
+  pull_request:
+    branches:
+      - master
+    types: [closed]
+
+jobs:
+  storybook-deploy:
+    name: Build Storybook
+    runs-on: ubuntu-latest
+    steps:
+    - name: latest code
+      uses: actions/checkout@v2
+
+    - name: build
+      run: |
+        yarn
+        yarn build:docs
+      
+    - name: Sync Files
+      uses: SamKirkland/FTP-Deploy-Action@4.2.0
+      with:
+        server: lboilard.devwebgarneau.com
+        username: lboilard
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: public_html/storybook/
