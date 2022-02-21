@@ -1,3 +1,5 @@
+**Storybook**
+
 [![Build Status](https://travis-ci.com/morewings/cra-template-npm-library.svg?branch=master)](https://travis-ci.com/morewings/cra-template-npm-library)
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=morewings/cra-template-npm-library)](https://dependabot.com)
 [![dependencies Status](https://david-dm.org/morewings/cra-template-npm-library/status.svg)](https://david-dm.org/morewings/cra-template-npm-library)
